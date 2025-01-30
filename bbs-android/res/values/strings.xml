@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">BBSAndroid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_bbsandroid">BBSAndroid</string>
+    <string name="title_activity_rsaandroid">RSAAndroid</string>
+    <string name="title_activity_pairing_performance">PairingPerformance</string>
+
+</resources>

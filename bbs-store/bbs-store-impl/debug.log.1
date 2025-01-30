@@ -1,0 +1,518 @@
+INFO main 2011-02-14 19:26:59,826 SettingsFactory - Named query checking : enabled
+INFO main 2011-02-14 19:26:59,827 SettingsFactory - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+INFO main 2011-02-14 19:26:59,830 SessionFactoryImpl - building session factory
+DEBUG main 2011-02-14 19:26:59,830 SessionFactoryImpl - Statistics initialized [enabled=false]}
+DEBUG main 2011-02-14 19:26:59,831 SessionFactoryImpl - Session factory constructed with filter configurations : {}
+DEBUG main 2011-02-14 19:26:59,831 SessionFactoryImpl - instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.password=pere, sun.boot.library.path=/usr/lib/jvm/jdk1.6.0_18/jre/lib/amd64, java.vm.version=16.0-b13, hibernate.connection.username=root, java.vm.vendor=Sun Microsystems Inc., java.vendor.url=http://java.sun.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=ES, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/apaspai/developing/java/bbs-store/bbs-store-impl, java.runtime.version=1.6.0_18-b07, hibernate.ejb.discard_pc_on_close=false, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, basedir=/home/apaspai/developing/java/bbs-store/bbs-store-impl, java.endorsed.dirs=/usr/lib/jvm/jdk1.6.0_18/jre/lib/endorsed, os.arch=amd64, surefire.real.class.path=/tmp/surefirebooter5485689394593476229.jar, hibernate.connection.autocommit=true, java.io.tmpdir=/tmp, line.separator=
+, java.vm.specification.vendor=Sun Microsystems Inc., os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/usr/lib/jvm/jdk1.6.0_18/jre/lib/amd64/server:/usr/lib/jvm/jdk1.6.0_18/jre/lib/amd64:/usr/lib/jvm/jdk1.6.0_18/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, surefire.test.class.path=/home/apaspai/developing/java/bbs-store/bbs-store-impl/target/test-classes:/home/apaspai/developing/java/bbs-store/bbs-store-impl/target/classes:/home/apaspai/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/home/apaspai/.m2/repository/mysql/mysql-connector-java/5.1.14/mysql-connector-java-5.1.14.jar:/home/apaspai/.m2/repository/org/hibernate/hibernate-core/3.6.0.Final/hibernate-core-3.6.0.Final.jar:/home/apaspai/.m2/repository/antlr/antlr/2.7.6/antlr-2.7.6.jar:/home/apaspai/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar:/home/apaspai/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/apaspai/.m2/repository/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final.jar:/home/apaspai/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar:/home/apaspai/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.0.Final/hibernate-jpa-2.0-api-1.0.0.Final.jar:/home/apaspai/.m2/repository/javax/transaction/jta/1.1/jta-1.1.jar:/home/apaspai/.m2/repository/cat/uib/secom/bbs-short-group-signature/0.0.1/bbs-short-group-signature-0.0.1.jar:/home/apaspai/.m2/repository/bouncycastle/bcprov-jdk16/140/bcprov-jdk16-140.jar:/home/apaspai/.m2/repository/it/unisa/dia/gas/jpbc-api/1.1.0/jpbc-api-1.1.0.jar:/home/apaspai/.m2/repository/it/unisa/dia/gas/jpbc-plaf/1.1.0/jpbc-plaf-1.1.0.jar:/home/apaspai/.m2/repository/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar:/home/apaspai/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar:/home/apaspai/.m2/repository/cat/uib/secom/secom-utils/0.0.1-SNAPSHOT/secom-utils-0.0.1-SNAPSHOT.jar:/home/apaspai/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/home/apaspai/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/home/apaspai/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/apaspai/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/home/apaspai/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/home/apaspai/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar:/home/apaspai/.m2/repository/org/hibernate/hibernate-entitymanager/3.6.0.Final/hibernate-entitymanager-3.6.0.Final.jar:/home/apaspai/.m2/repository/cglib/cglib/2.2/cglib-2.2.jar:/home/apaspai/.m2/repository/asm/asm/3.1/asm-3.1.jar:/home/apaspai/.m2/repository/javassist/javassist/3.12.0.GA/javassist-3.12.0.GA.jar:/home/apaspai/developing/java/bbs-store/bbs-store-api/target/classes:/home/apaspai/.m2/repository/org/simpleframework/simple-xml/2.4.1/simple-xml-2.4.1.jar:/home/apaspai/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/home/apaspai/.m2/repository/stax/stax/1.2.0/stax-1.2.0.jar:, java.specification.name=Java Platform API Specification, java.class.version=50.0, sun.management.compiler=HotSpot 64-Bit Server Compiler, hibernate.transaction.factory_class=org.hibernate.transaction.JDBCTransactionFactory, os.version=2.6.32-5-amd64, user.home=/home/apaspai, user.timezone=Europe/Madrid, java.awt.printerjob=sun.print.PSPrinterJob, hibernate.connection.release_mode=auto, java.specification.version=1.6, file.encoding=UTF-8, hibernate.connection.driver_class=com.mysql.jdbc.Driver, user.name=apaspai, java.class.path=/home/apaspai/developing/java/bbs-store/bbs-store-impl/target/test-classes:/home/apaspai/developing/java/bbs-store/bbs-store-impl/target/classes:/home/apaspai/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/home/apaspai/.m2/repository/mysql/mysql-connector-java/5.1.14/mysql-connector-java-5.1.14.jar:/home/apaspai/.m2/repository/org/hibernate/hibernate-core/3.6.0.Final/hibernate-core-3.6.0.Final.jar:/home/apaspai/.m2/repository/antlr/antlr/2.7.6/antlr-2.7.6.jar:/home/apaspai/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar:/home/apaspai/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/apaspai/.m2/repository/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final.jar:/home/apaspai/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar:/home/apaspai/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.0.Final/hibernate-jpa-2.0-api-1.0.0.Final.jar:/home/apaspai/.m2/repository/javax/transaction/jta/1.1/jta-1.1.jar:/home/apaspai/.m2/repository/cat/uib/secom/bbs-short-group-signature/0.0.1/bbs-short-group-signature-0.0.1.jar:/home/apaspai/.m2/repository/bouncycastle/bcprov-jdk16/140/bcprov-jdk16-140.jar:/home/apaspai/.m2/repository/it/unisa/dia/gas/jpbc-api/1.1.0/jpbc-api-1.1.0.jar:/home/apaspai/.m2/repository/it/unisa/dia/gas/jpbc-plaf/1.1.0/jpbc-plaf-1.1.0.jar:/home/apaspai/.m2/repository/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar:/home/apaspai/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar:/home/apaspai/.m2/repository/cat/uib/secom/secom-utils/0.0.1-SNAPSHOT/secom-utils-0.0.1-SNAPSHOT.jar:/home/apaspai/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/home/apaspai/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/home/apaspai/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/apaspai/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/home/apaspai/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/home/apaspai/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar:/home/apaspai/.m2/repository/org/hibernate/hibernate-entitymanager/3.6.0.Final/hibernate-entitymanager-3.6.0.Final.jar:/home/apaspai/.m2/repository/cglib/cglib/2.2/cglib-2.2.jar:/home/apaspai/.m2/repository/asm/asm/3.1/asm-3.1.jar:/home/apaspai/.m2/repository/javassist/javassist/3.12.0.GA/javassist-3.12.0.GA.jar:/home/apaspai/developing/java/bbs-store/bbs-store-api/target/classes:/home/apaspai/.m2/repository/org/simpleframework/simple-xml/2.4.1/simple-xml-2.4.1.jar:/home/apaspai/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/home/apaspai/.m2/repository/stax/stax/1.2.0/stax-1.2.0.jar:, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.use_identifier_rollback=false, java.vm.specification.version=1.0, sun.arch.data.model=64, java.home=/usr/lib/jvm/jdk1.6.0_18/jre, hibernate.connection.url=jdbc:mysql://localhost/testingBBS2, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.specification.vendor=Sun Microsystems Inc., user.language=es, java.vm.info=mixed mode, java.version=1.6.0_18, hibernate.transaction.flush_before_completion=false, java.ext.dirs=/usr/lib/jvm/jdk1.6.0_18/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/jdk1.6.0_18/jre/lib/resources.jar:/usr/lib/jvm/jdk1.6.0_18/jre/lib/rt.jar:/usr/lib/jvm/jdk1.6.0_18/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.6.0_18/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.6.0_18/jre/lib/jce.jar:/usr/lib/jvm/jdk1.6.0_18/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.6.0_18/jre/classes, java.vendor=Sun Microsystems Inc., localRepository=/home/apaspai/.m2/repository, file.separator=/, java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi, hibernate.hbm2ddl.auto=update, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, hibernate.query.jpaql_strict_compliance=true, sun.desktop=gnome, sun.cpu.isalist=}
+DEBUG main 2011-02-14 19:26:59,831 DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.MySQLDialect]
+DEBUG main 2011-02-14 19:26:59,832 DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.MySQLDialect]
+DEBUG main 2011-02-14 19:26:59,832 DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.MySQLDialect]
+DEBUG main 2011-02-14 19:26:59,833 AbstractEntityPersister - Static SQL for entity: cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB
+DEBUG main 2011-02-14 19:26:59,834 AbstractEntityPersister -  Version select: select ID from GROUP_MANAGER_GROUP_PUBLIC_KEY where ID =?
+DEBUG main 2011-02-14 19:26:59,834 AbstractEntityPersister -  Snapshot select: select grouppubli_.ID, grouppubli_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_, grouppubli_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_, grouppubli_.GROUP_PUBLIC_KEY_H as GROUP4_20_, grouppubli_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_, grouppubli_.GROUP_PUBLIC_KEY_U as GROUP6_20_, grouppubli_.GROUP_PUBLIC_KEY_V as GROUP7_20_ from GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli_ where grouppubli_.ID=?
+DEBUG main 2011-02-14 19:26:59,834 AbstractEntityPersister -  Insert 0: insert into GROUP_MANAGER_GROUP_PUBLIC_KEY (GROUP_PUBLIC_KEY_G1, GROUP_PUBLIC_KEY_G2, GROUP_PUBLIC_KEY_H, GROUP_PUBLIC_KEY_OMEGA, GROUP_PUBLIC_KEY_U, GROUP_PUBLIC_KEY_V, ID) values (?, ?, ?, ?, ?, ?, ?)
+DEBUG main 2011-02-14 19:26:59,834 AbstractEntityPersister -  Update 0: update GROUP_MANAGER_GROUP_PUBLIC_KEY set GROUP_PUBLIC_KEY_G1=?, GROUP_PUBLIC_KEY_G2=?, GROUP_PUBLIC_KEY_H=?, GROUP_PUBLIC_KEY_OMEGA=?, GROUP_PUBLIC_KEY_U=?, GROUP_PUBLIC_KEY_V=? where ID=?
+DEBUG main 2011-02-14 19:26:59,834 AbstractEntityPersister -  Delete 0: delete from GROUP_MANAGER_GROUP_PUBLIC_KEY where ID=?
+DEBUG main 2011-02-14 19:26:59,834 AbstractEntityPersister -  Identity insert: insert into GROUP_MANAGER_GROUP_PUBLIC_KEY (GROUP_PUBLIC_KEY_G1, GROUP_PUBLIC_KEY_G2, GROUP_PUBLIC_KEY_H, GROUP_PUBLIC_KEY_OMEGA, GROUP_PUBLIC_KEY_U, GROUP_PUBLIC_KEY_V) values (?, ?, ?, ?, ?, ?)
+DEBUG main 2011-02-14 19:26:59,836 AbstractEntityPersister - Static SQL for entity: cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB
+DEBUG main 2011-02-14 19:26:59,836 AbstractEntityPersister -  Version select: select ID from GROUP_MANAGER_USER_PRIVATE_KEY where ID =?
+DEBUG main 2011-02-14 19:26:59,836 AbstractEntityPersister -  Snapshot select: select userprivat_.ID, userprivat_.ISSUE_DATE as ISSUE3_18_, userprivat_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_, userprivat_.IS_ISSUED as IS4_18_, userprivat_.IS_REVOKED as IS5_18_, userprivat_.USER_IDENTITY as USER6_18_, userprivat_.USER_PK_A as USER7_18_, userprivat_.USER_PK_X as USER8_18_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat_ where userprivat_.ID=?
+DEBUG main 2011-02-14 19:26:59,837 AbstractEntityPersister -  Insert 0: insert into GROUP_MANAGER_USER_PRIVATE_KEY (ISSUE_DATE, GROUP_PUBLIC_KEY_ID_FK, IS_ISSUED, IS_REVOKED, USER_IDENTITY, USER_PK_A, USER_PK_X, DISC, ID) values (?, ?, ?, ?, ?, ?, ?, 'USER_PRIVATE_KEY_DB', ?)
+DEBUG main 2011-02-14 19:26:59,837 AbstractEntityPersister -  Update 0: update GROUP_MANAGER_USER_PRIVATE_KEY set ISSUE_DATE=?, GROUP_PUBLIC_KEY_ID_FK=?, IS_ISSUED=?, IS_REVOKED=?, USER_IDENTITY=?, USER_PK_A=?, USER_PK_X=? where ID=?
+DEBUG main 2011-02-14 19:26:59,837 AbstractEntityPersister -  Delete 0: delete from GROUP_MANAGER_USER_PRIVATE_KEY where ID=?
+DEBUG main 2011-02-14 19:26:59,837 AbstractEntityPersister -  Identity insert: insert into GROUP_MANAGER_USER_PRIVATE_KEY (ISSUE_DATE, GROUP_PUBLIC_KEY_ID_FK, IS_ISSUED, IS_REVOKED, USER_IDENTITY, USER_PK_A, USER_PK_X, DISC) values (?, ?, ?, ?, ?, ?, ?, 'USER_PRIVATE_KEY_DB')
+DEBUG main 2011-02-14 19:26:59,838 AbstractEntityPersister - Static SQL for entity: cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB
+DEBUG main 2011-02-14 19:26:59,838 AbstractEntityPersister -  Version select: select ID from GROUP_MANAGER_PRIVATE_KEY where ID =?
+DEBUG main 2011-02-14 19:26:59,839 AbstractEntityPersister -  Snapshot select: select groupmanag_.ID, groupmanag_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_, groupmanag_.DELTA1 as DELTA2_19_, groupmanag_.DELTA2 as DELTA3_19_, groupmanag_.GAMMA as GAMMA19_ from GROUP_MANAGER_PRIVATE_KEY groupmanag_ where groupmanag_.ID=?
+DEBUG main 2011-02-14 19:26:59,839 AbstractEntityPersister -  Insert 0: insert into GROUP_MANAGER_PRIVATE_KEY (GROUP_PUBLIC_KEY_ID_FK, DELTA1, DELTA2, GAMMA, ID) values (?, ?, ?, ?, ?)
+DEBUG main 2011-02-14 19:26:59,839 AbstractEntityPersister -  Update 0: update GROUP_MANAGER_PRIVATE_KEY set GROUP_PUBLIC_KEY_ID_FK=?, DELTA1=?, DELTA2=?, GAMMA=? where ID=?
+DEBUG main 2011-02-14 19:26:59,839 AbstractEntityPersister -  Delete 0: delete from GROUP_MANAGER_PRIVATE_KEY where ID=?
+DEBUG main 2011-02-14 19:26:59,839 AbstractEntityPersister -  Identity insert: insert into GROUP_MANAGER_PRIVATE_KEY (GROUP_PUBLIC_KEY_ID_FK, DELTA1, DELTA2, GAMMA) values (?, ?, ?, ?)
+DEBUG main 2011-02-14 19:26:59,840 AbstractCollectionPersister - Static SQL for collection: cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB.users
+DEBUG main 2011-02-14 19:26:59,840 AbstractCollectionPersister -  Row insert: update GROUP_MANAGER_USER_PRIVATE_KEY set GROUP_PUBLIC_KEY_ID_FK=? where ID=?
+DEBUG main 2011-02-14 19:26:59,840 AbstractCollectionPersister -  Row delete: update GROUP_MANAGER_USER_PRIVATE_KEY set GROUP_PUBLIC_KEY_ID_FK=null where GROUP_PUBLIC_KEY_ID_FK=? and ID=?
+DEBUG main 2011-02-14 19:26:59,840 AbstractCollectionPersister -  One-shot delete: update GROUP_MANAGER_USER_PRIVATE_KEY set GROUP_PUBLIC_KEY_ID_FK=null where GROUP_PUBLIC_KEY_ID_FK=?
+DEBUG main 2011-02-14 19:26:59,840 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB [NONE]: select grouppubli0_.ID as ID20_1_, grouppubli0_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_H as GROUP4_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_U as GROUP6_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_V as GROUP7_20_1_, groupmanag1_.ID as ID19_0_, groupmanag1_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_0_, groupmanag1_.DELTA1 as DELTA2_19_0_, groupmanag1_.DELTA2 as DELTA3_19_0_, groupmanag1_.GAMMA as GAMMA19_0_ from GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli0_ left outer join GROUP_MANAGER_PRIVATE_KEY groupmanag1_ on grouppubli0_.ID=groupmanag1_.GROUP_PUBLIC_KEY_ID_FK where grouppubli0_.ID=?
+DEBUG main 2011-02-14 19:26:59,841 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB [READ]: select grouppubli0_.ID as ID20_1_, grouppubli0_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_H as GROUP4_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_U as GROUP6_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_V as GROUP7_20_1_, groupmanag1_.ID as ID19_0_, groupmanag1_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_0_, groupmanag1_.DELTA1 as DELTA2_19_0_, groupmanag1_.DELTA2 as DELTA3_19_0_, groupmanag1_.GAMMA as GAMMA19_0_ from GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli0_ left outer join GROUP_MANAGER_PRIVATE_KEY groupmanag1_ on grouppubli0_.ID=groupmanag1_.GROUP_PUBLIC_KEY_ID_FK where grouppubli0_.ID=?
+DEBUG main 2011-02-14 19:26:59,841 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB [UPGRADE]: select grouppubli0_.ID as ID20_0_, grouppubli0_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_H as GROUP4_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_U as GROUP6_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_V as GROUP7_20_0_ from GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli0_ where grouppubli0_.ID=? for update
+DEBUG main 2011-02-14 19:26:59,841 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB [UPGRADE_NOWAIT]: select grouppubli0_.ID as ID20_0_, grouppubli0_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_H as GROUP4_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_U as GROUP6_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_V as GROUP7_20_0_ from GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli0_ where grouppubli0_.ID=? for update
+DEBUG main 2011-02-14 19:26:59,842 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB [FORCE]: select grouppubli0_.ID as ID20_0_, grouppubli0_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_H as GROUP4_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_U as GROUP6_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_V as GROUP7_20_0_ from GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli0_ where grouppubli0_.ID=? for update
+DEBUG main 2011-02-14 19:26:59,842 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB [PESSIMISTIC_READ]: select grouppubli0_.ID as ID20_0_, grouppubli0_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_H as GROUP4_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_U as GROUP6_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_V as GROUP7_20_0_ from GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli0_ where grouppubli0_.ID=? lock in share mode
+DEBUG main 2011-02-14 19:26:59,842 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB [PESSIMISTIC_WRITE]: select grouppubli0_.ID as ID20_0_, grouppubli0_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_H as GROUP4_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_U as GROUP6_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_V as GROUP7_20_0_ from GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli0_ where grouppubli0_.ID=? for update
+DEBUG main 2011-02-14 19:26:59,842 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB [PESSIMISTIC_FORCE_INCREMENT]: select grouppubli0_.ID as ID20_0_, grouppubli0_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_H as GROUP4_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_U as GROUP6_20_0_, grouppubli0_.GROUP_PUBLIC_KEY_V as GROUP7_20_0_ from GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli0_ where grouppubli0_.ID=? for update
+DEBUG main 2011-02-14 19:26:59,843 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB [OPTIMISTIC]: select grouppubli0_.ID as ID20_1_, grouppubli0_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_H as GROUP4_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_U as GROUP6_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_V as GROUP7_20_1_, groupmanag1_.ID as ID19_0_, groupmanag1_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_0_, groupmanag1_.DELTA1 as DELTA2_19_0_, groupmanag1_.DELTA2 as DELTA3_19_0_, groupmanag1_.GAMMA as GAMMA19_0_ from GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli0_ left outer join GROUP_MANAGER_PRIVATE_KEY groupmanag1_ on grouppubli0_.ID=groupmanag1_.GROUP_PUBLIC_KEY_ID_FK where grouppubli0_.ID=?
+DEBUG main 2011-02-14 19:26:59,843 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB [OPTIMISTIC_FORCE_INCREMENT]: select grouppubli0_.ID as ID20_1_, grouppubli0_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_H as GROUP4_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_U as GROUP6_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_V as GROUP7_20_1_, groupmanag1_.ID as ID19_0_, groupmanag1_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_0_, groupmanag1_.DELTA1 as DELTA2_19_0_, groupmanag1_.DELTA2 as DELTA3_19_0_, groupmanag1_.GAMMA as GAMMA19_0_ from GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli0_ left outer join GROUP_MANAGER_PRIVATE_KEY groupmanag1_ on grouppubli0_.ID=groupmanag1_.GROUP_PUBLIC_KEY_ID_FK where grouppubli0_.ID=?
+DEBUG main 2011-02-14 19:26:59,844 CascadeEntityLoader - Static select for action ACTION_MERGE on entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB: select grouppubli0_.ID as ID20_2_, grouppubli0_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_2_, grouppubli0_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_2_, grouppubli0_.GROUP_PUBLIC_KEY_H as GROUP4_20_2_, grouppubli0_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_2_, grouppubli0_.GROUP_PUBLIC_KEY_U as GROUP6_20_2_, grouppubli0_.GROUP_PUBLIC_KEY_V as GROUP7_20_2_, users1_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_20_4_, users1_.ID as ID4_, users1_.ID as ID18_0_, users1_.ISSUE_DATE as ISSUE3_18_0_, users1_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_0_, users1_.IS_ISSUED as IS4_18_0_, users1_.IS_REVOKED as IS5_18_0_, users1_.USER_IDENTITY as USER6_18_0_, users1_.USER_PK_A as USER7_18_0_, users1_.USER_PK_X as USER8_18_0_, groupmanag2_.ID as ID19_1_, groupmanag2_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_1_, groupmanag2_.DELTA1 as DELTA2_19_1_, groupmanag2_.DELTA2 as DELTA3_19_1_, groupmanag2_.GAMMA as GAMMA19_1_ from GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli0_ left outer join GROUP_MANAGER_USER_PRIVATE_KEY users1_ on grouppubli0_.ID=users1_.GROUP_PUBLIC_KEY_ID_FK left outer join GROUP_MANAGER_PRIVATE_KEY groupmanag2_ on grouppubli0_.ID=groupmanag2_.GROUP_PUBLIC_KEY_ID_FK where grouppubli0_.ID=?
+DEBUG main 2011-02-14 19:26:59,844 CascadeEntityLoader - Static select for action ACTION_REFRESH on entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB: select grouppubli0_.ID as ID20_2_, grouppubli0_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_2_, grouppubli0_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_2_, grouppubli0_.GROUP_PUBLIC_KEY_H as GROUP4_20_2_, grouppubli0_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_2_, grouppubli0_.GROUP_PUBLIC_KEY_U as GROUP6_20_2_, grouppubli0_.GROUP_PUBLIC_KEY_V as GROUP7_20_2_, users1_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_20_4_, users1_.ID as ID4_, users1_.ID as ID18_0_, users1_.ISSUE_DATE as ISSUE3_18_0_, users1_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_0_, users1_.IS_ISSUED as IS4_18_0_, users1_.IS_REVOKED as IS5_18_0_, users1_.USER_IDENTITY as USER6_18_0_, users1_.USER_PK_A as USER7_18_0_, users1_.USER_PK_X as USER8_18_0_, groupmanag2_.ID as ID19_1_, groupmanag2_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_1_, groupmanag2_.DELTA1 as DELTA2_19_1_, groupmanag2_.DELTA2 as DELTA3_19_1_, groupmanag2_.GAMMA as GAMMA19_1_ from GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli0_ left outer join GROUP_MANAGER_USER_PRIVATE_KEY users1_ on grouppubli0_.ID=users1_.GROUP_PUBLIC_KEY_ID_FK left outer join GROUP_MANAGER_PRIVATE_KEY groupmanag2_ on grouppubli0_.ID=groupmanag2_.GROUP_PUBLIC_KEY_ID_FK where grouppubli0_.ID=?
+DEBUG main 2011-02-14 19:26:59,845 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB [NONE]: select userprivat0_.ID as ID18_2_, userprivat0_.ISSUE_DATE as ISSUE3_18_2_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_2_, userprivat0_.IS_ISSUED as IS4_18_2_, userprivat0_.IS_REVOKED as IS5_18_2_, userprivat0_.USER_IDENTITY as USER6_18_2_, userprivat0_.USER_PK_A as USER7_18_2_, userprivat0_.USER_PK_X as USER8_18_2_, grouppubli1_.ID as ID20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_H as GROUP4_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_U as GROUP6_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_V as GROUP7_20_0_, groupmanag2_.ID as ID19_1_, groupmanag2_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_1_, groupmanag2_.DELTA1 as DELTA2_19_1_, groupmanag2_.DELTA2 as DELTA3_19_1_, groupmanag2_.GAMMA as GAMMA19_1_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ inner join GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli1_ on userprivat0_.GROUP_PUBLIC_KEY_ID_FK=grouppubli1_.ID left outer join GROUP_MANAGER_PRIVATE_KEY groupmanag2_ on grouppubli1_.ID=groupmanag2_.GROUP_PUBLIC_KEY_ID_FK where userprivat0_.ID=?
+DEBUG main 2011-02-14 19:26:59,845 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB [READ]: select userprivat0_.ID as ID18_2_, userprivat0_.ISSUE_DATE as ISSUE3_18_2_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_2_, userprivat0_.IS_ISSUED as IS4_18_2_, userprivat0_.IS_REVOKED as IS5_18_2_, userprivat0_.USER_IDENTITY as USER6_18_2_, userprivat0_.USER_PK_A as USER7_18_2_, userprivat0_.USER_PK_X as USER8_18_2_, grouppubli1_.ID as ID20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_H as GROUP4_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_U as GROUP6_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_V as GROUP7_20_0_, groupmanag2_.ID as ID19_1_, groupmanag2_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_1_, groupmanag2_.DELTA1 as DELTA2_19_1_, groupmanag2_.DELTA2 as DELTA3_19_1_, groupmanag2_.GAMMA as GAMMA19_1_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ inner join GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli1_ on userprivat0_.GROUP_PUBLIC_KEY_ID_FK=grouppubli1_.ID left outer join GROUP_MANAGER_PRIVATE_KEY groupmanag2_ on grouppubli1_.ID=groupmanag2_.GROUP_PUBLIC_KEY_ID_FK where userprivat0_.ID=?
+DEBUG main 2011-02-14 19:26:59,845 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB [UPGRADE]: select userprivat0_.ID as ID18_0_, userprivat0_.ISSUE_DATE as ISSUE3_18_0_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_0_, userprivat0_.IS_ISSUED as IS4_18_0_, userprivat0_.IS_REVOKED as IS5_18_0_, userprivat0_.USER_IDENTITY as USER6_18_0_, userprivat0_.USER_PK_A as USER7_18_0_, userprivat0_.USER_PK_X as USER8_18_0_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.ID=? for update
+DEBUG main 2011-02-14 19:26:59,846 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB [UPGRADE_NOWAIT]: select userprivat0_.ID as ID18_0_, userprivat0_.ISSUE_DATE as ISSUE3_18_0_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_0_, userprivat0_.IS_ISSUED as IS4_18_0_, userprivat0_.IS_REVOKED as IS5_18_0_, userprivat0_.USER_IDENTITY as USER6_18_0_, userprivat0_.USER_PK_A as USER7_18_0_, userprivat0_.USER_PK_X as USER8_18_0_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.ID=? for update
+DEBUG main 2011-02-14 19:26:59,846 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB [FORCE]: select userprivat0_.ID as ID18_0_, userprivat0_.ISSUE_DATE as ISSUE3_18_0_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_0_, userprivat0_.IS_ISSUED as IS4_18_0_, userprivat0_.IS_REVOKED as IS5_18_0_, userprivat0_.USER_IDENTITY as USER6_18_0_, userprivat0_.USER_PK_A as USER7_18_0_, userprivat0_.USER_PK_X as USER8_18_0_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.ID=? for update
+DEBUG main 2011-02-14 19:26:59,846 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB [PESSIMISTIC_READ]: select userprivat0_.ID as ID18_0_, userprivat0_.ISSUE_DATE as ISSUE3_18_0_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_0_, userprivat0_.IS_ISSUED as IS4_18_0_, userprivat0_.IS_REVOKED as IS5_18_0_, userprivat0_.USER_IDENTITY as USER6_18_0_, userprivat0_.USER_PK_A as USER7_18_0_, userprivat0_.USER_PK_X as USER8_18_0_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.ID=? lock in share mode
+DEBUG main 2011-02-14 19:26:59,846 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB [PESSIMISTIC_WRITE]: select userprivat0_.ID as ID18_0_, userprivat0_.ISSUE_DATE as ISSUE3_18_0_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_0_, userprivat0_.IS_ISSUED as IS4_18_0_, userprivat0_.IS_REVOKED as IS5_18_0_, userprivat0_.USER_IDENTITY as USER6_18_0_, userprivat0_.USER_PK_A as USER7_18_0_, userprivat0_.USER_PK_X as USER8_18_0_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.ID=? for update
+DEBUG main 2011-02-14 19:26:59,847 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB [PESSIMISTIC_FORCE_INCREMENT]: select userprivat0_.ID as ID18_0_, userprivat0_.ISSUE_DATE as ISSUE3_18_0_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_0_, userprivat0_.IS_ISSUED as IS4_18_0_, userprivat0_.IS_REVOKED as IS5_18_0_, userprivat0_.USER_IDENTITY as USER6_18_0_, userprivat0_.USER_PK_A as USER7_18_0_, userprivat0_.USER_PK_X as USER8_18_0_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.ID=? for update
+DEBUG main 2011-02-14 19:26:59,848 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB [OPTIMISTIC]: select userprivat0_.ID as ID18_2_, userprivat0_.ISSUE_DATE as ISSUE3_18_2_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_2_, userprivat0_.IS_ISSUED as IS4_18_2_, userprivat0_.IS_REVOKED as IS5_18_2_, userprivat0_.USER_IDENTITY as USER6_18_2_, userprivat0_.USER_PK_A as USER7_18_2_, userprivat0_.USER_PK_X as USER8_18_2_, grouppubli1_.ID as ID20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_H as GROUP4_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_U as GROUP6_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_V as GROUP7_20_0_, groupmanag2_.ID as ID19_1_, groupmanag2_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_1_, groupmanag2_.DELTA1 as DELTA2_19_1_, groupmanag2_.DELTA2 as DELTA3_19_1_, groupmanag2_.GAMMA as GAMMA19_1_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ inner join GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli1_ on userprivat0_.GROUP_PUBLIC_KEY_ID_FK=grouppubli1_.ID left outer join GROUP_MANAGER_PRIVATE_KEY groupmanag2_ on grouppubli1_.ID=groupmanag2_.GROUP_PUBLIC_KEY_ID_FK where userprivat0_.ID=?
+DEBUG main 2011-02-14 19:26:59,850 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB [OPTIMISTIC_FORCE_INCREMENT]: select userprivat0_.ID as ID18_2_, userprivat0_.ISSUE_DATE as ISSUE3_18_2_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_2_, userprivat0_.IS_ISSUED as IS4_18_2_, userprivat0_.IS_REVOKED as IS5_18_2_, userprivat0_.USER_IDENTITY as USER6_18_2_, userprivat0_.USER_PK_A as USER7_18_2_, userprivat0_.USER_PK_X as USER8_18_2_, grouppubli1_.ID as ID20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_H as GROUP4_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_U as GROUP6_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_V as GROUP7_20_0_, groupmanag2_.ID as ID19_1_, groupmanag2_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_1_, groupmanag2_.DELTA1 as DELTA2_19_1_, groupmanag2_.DELTA2 as DELTA3_19_1_, groupmanag2_.GAMMA as GAMMA19_1_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ inner join GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli1_ on userprivat0_.GROUP_PUBLIC_KEY_ID_FK=grouppubli1_.ID left outer join GROUP_MANAGER_PRIVATE_KEY groupmanag2_ on grouppubli1_.ID=groupmanag2_.GROUP_PUBLIC_KEY_ID_FK where userprivat0_.ID=?
+DEBUG main 2011-02-14 19:26:59,850 CascadeEntityLoader - Static select for action ACTION_MERGE on entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB: select userprivat0_.ID as ID18_0_, userprivat0_.ISSUE_DATE as ISSUE3_18_0_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_0_, userprivat0_.IS_ISSUED as IS4_18_0_, userprivat0_.IS_REVOKED as IS5_18_0_, userprivat0_.USER_IDENTITY as USER6_18_0_, userprivat0_.USER_PK_A as USER7_18_0_, userprivat0_.USER_PK_X as USER8_18_0_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.ID=?
+DEBUG main 2011-02-14 19:26:59,850 CascadeEntityLoader - Static select for action ACTION_REFRESH on entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB: select userprivat0_.ID as ID18_0_, userprivat0_.ISSUE_DATE as ISSUE3_18_0_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_0_, userprivat0_.IS_ISSUED as IS4_18_0_, userprivat0_.IS_REVOKED as IS5_18_0_, userprivat0_.USER_IDENTITY as USER6_18_0_, userprivat0_.USER_PK_A as USER7_18_0_, userprivat0_.USER_PK_X as USER8_18_0_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.ID=?
+DEBUG main 2011-02-14 19:26:59,850 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB [NONE]: select groupmanag0_.ID as ID19_1_, groupmanag0_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_1_, groupmanag0_.DELTA1 as DELTA2_19_1_, groupmanag0_.DELTA2 as DELTA3_19_1_, groupmanag0_.GAMMA as GAMMA19_1_, grouppubli1_.ID as ID20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_H as GROUP4_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_U as GROUP6_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_V as GROUP7_20_0_ from GROUP_MANAGER_PRIVATE_KEY groupmanag0_ left outer join GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli1_ on groupmanag0_.GROUP_PUBLIC_KEY_ID_FK=grouppubli1_.ID where groupmanag0_.ID=?
+DEBUG main 2011-02-14 19:26:59,851 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB [READ]: select groupmanag0_.ID as ID19_1_, groupmanag0_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_1_, groupmanag0_.DELTA1 as DELTA2_19_1_, groupmanag0_.DELTA2 as DELTA3_19_1_, groupmanag0_.GAMMA as GAMMA19_1_, grouppubli1_.ID as ID20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_H as GROUP4_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_U as GROUP6_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_V as GROUP7_20_0_ from GROUP_MANAGER_PRIVATE_KEY groupmanag0_ left outer join GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli1_ on groupmanag0_.GROUP_PUBLIC_KEY_ID_FK=grouppubli1_.ID where groupmanag0_.ID=?
+DEBUG main 2011-02-14 19:26:59,851 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB [UPGRADE]: select groupmanag0_.ID as ID19_0_, groupmanag0_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_0_, groupmanag0_.DELTA1 as DELTA2_19_0_, groupmanag0_.DELTA2 as DELTA3_19_0_, groupmanag0_.GAMMA as GAMMA19_0_ from GROUP_MANAGER_PRIVATE_KEY groupmanag0_ where groupmanag0_.ID=? for update
+DEBUG main 2011-02-14 19:26:59,851 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB [UPGRADE_NOWAIT]: select groupmanag0_.ID as ID19_0_, groupmanag0_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_0_, groupmanag0_.DELTA1 as DELTA2_19_0_, groupmanag0_.DELTA2 as DELTA3_19_0_, groupmanag0_.GAMMA as GAMMA19_0_ from GROUP_MANAGER_PRIVATE_KEY groupmanag0_ where groupmanag0_.ID=? for update
+DEBUG main 2011-02-14 19:26:59,852 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB [FORCE]: select groupmanag0_.ID as ID19_0_, groupmanag0_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_0_, groupmanag0_.DELTA1 as DELTA2_19_0_, groupmanag0_.DELTA2 as DELTA3_19_0_, groupmanag0_.GAMMA as GAMMA19_0_ from GROUP_MANAGER_PRIVATE_KEY groupmanag0_ where groupmanag0_.ID=? for update
+DEBUG main 2011-02-14 19:26:59,852 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB [PESSIMISTIC_READ]: select groupmanag0_.ID as ID19_0_, groupmanag0_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_0_, groupmanag0_.DELTA1 as DELTA2_19_0_, groupmanag0_.DELTA2 as DELTA3_19_0_, groupmanag0_.GAMMA as GAMMA19_0_ from GROUP_MANAGER_PRIVATE_KEY groupmanag0_ where groupmanag0_.ID=? lock in share mode
+DEBUG main 2011-02-14 19:26:59,852 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB [PESSIMISTIC_WRITE]: select groupmanag0_.ID as ID19_0_, groupmanag0_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_0_, groupmanag0_.DELTA1 as DELTA2_19_0_, groupmanag0_.DELTA2 as DELTA3_19_0_, groupmanag0_.GAMMA as GAMMA19_0_ from GROUP_MANAGER_PRIVATE_KEY groupmanag0_ where groupmanag0_.ID=? for update
+DEBUG main 2011-02-14 19:26:59,852 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB [PESSIMISTIC_FORCE_INCREMENT]: select groupmanag0_.ID as ID19_0_, groupmanag0_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_0_, groupmanag0_.DELTA1 as DELTA2_19_0_, groupmanag0_.DELTA2 as DELTA3_19_0_, groupmanag0_.GAMMA as GAMMA19_0_ from GROUP_MANAGER_PRIVATE_KEY groupmanag0_ where groupmanag0_.ID=? for update
+DEBUG main 2011-02-14 19:26:59,853 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB [OPTIMISTIC]: select groupmanag0_.ID as ID19_1_, groupmanag0_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_1_, groupmanag0_.DELTA1 as DELTA2_19_1_, groupmanag0_.DELTA2 as DELTA3_19_1_, groupmanag0_.GAMMA as GAMMA19_1_, grouppubli1_.ID as ID20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_H as GROUP4_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_U as GROUP6_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_V as GROUP7_20_0_ from GROUP_MANAGER_PRIVATE_KEY groupmanag0_ left outer join GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli1_ on groupmanag0_.GROUP_PUBLIC_KEY_ID_FK=grouppubli1_.ID where groupmanag0_.ID=?
+DEBUG main 2011-02-14 19:26:59,853 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB [OPTIMISTIC_FORCE_INCREMENT]: select groupmanag0_.ID as ID19_1_, groupmanag0_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_1_, groupmanag0_.DELTA1 as DELTA2_19_1_, groupmanag0_.DELTA2 as DELTA3_19_1_, groupmanag0_.GAMMA as GAMMA19_1_, grouppubli1_.ID as ID20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_H as GROUP4_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_U as GROUP6_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_V as GROUP7_20_0_ from GROUP_MANAGER_PRIVATE_KEY groupmanag0_ left outer join GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli1_ on groupmanag0_.GROUP_PUBLIC_KEY_ID_FK=grouppubli1_.ID where groupmanag0_.ID=?
+DEBUG main 2011-02-14 19:26:59,853 CascadeEntityLoader - Static select for action ACTION_MERGE on entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB: select groupmanag0_.ID as ID19_0_, groupmanag0_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_0_, groupmanag0_.DELTA1 as DELTA2_19_0_, groupmanag0_.DELTA2 as DELTA3_19_0_, groupmanag0_.GAMMA as GAMMA19_0_ from GROUP_MANAGER_PRIVATE_KEY groupmanag0_ where groupmanag0_.ID=?
+DEBUG main 2011-02-14 19:26:59,854 CascadeEntityLoader - Static select for action ACTION_REFRESH on entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB: select groupmanag0_.ID as ID19_0_, groupmanag0_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_0_, groupmanag0_.DELTA1 as DELTA2_19_0_, groupmanag0_.DELTA2 as DELTA3_19_0_, groupmanag0_.GAMMA as GAMMA19_0_ from GROUP_MANAGER_PRIVATE_KEY groupmanag0_ where groupmanag0_.ID=?
+DEBUG main 2011-02-14 19:26:59,854 EntityLoader - Static select for entity cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB [NONE]: select groupmanag0_.ID as ID19_1_, groupmanag0_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_1_, groupmanag0_.DELTA1 as DELTA2_19_1_, groupmanag0_.DELTA2 as DELTA3_19_1_, groupmanag0_.GAMMA as GAMMA19_1_, grouppubli1_.ID as ID20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_H as GROUP4_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_U as GROUP6_20_0_, grouppubli1_.GROUP_PUBLIC_KEY_V as GROUP7_20_0_ from GROUP_MANAGER_PRIVATE_KEY groupmanag0_ left outer join GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli1_ on groupmanag0_.GROUP_PUBLIC_KEY_ID_FK=grouppubli1_.ID where groupmanag0_.GROUP_PUBLIC_KEY_ID_FK=?
+DEBUG main 2011-02-14 19:26:59,854 OneToManyLoader - Static select for one-to-many cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB.users: select users0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_20_1_, users0_.ID as ID1_, users0_.ID as ID18_0_, users0_.ISSUE_DATE as ISSUE3_18_0_, users0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_0_, users0_.IS_ISSUED as IS4_18_0_, users0_.IS_REVOKED as IS5_18_0_, users0_.USER_IDENTITY as USER6_18_0_, users0_.USER_PK_A as USER7_18_0_, users0_.USER_PK_X as USER8_18_0_ from GROUP_MANAGER_USER_PRIVATE_KEY users0_ where users0_.GROUP_PUBLIC_KEY_ID_FK=?
+DEBUG main 2011-02-14 19:26:59,854 SessionFactoryObjectFactory - registered: 10a7f3eb-6301-4a79-ba26-69077a1779b9 (unnamed)
+INFO main 2011-02-14 19:26:59,855 SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+DEBUG main 2011-02-14 19:26:59,855 SessionFactoryImpl - instantiated session factory
+INFO main 2011-02-14 19:26:59,855 SchemaUpdate - Running hbm2ddl schema update
+INFO main 2011-02-14 19:26:59,855 SchemaUpdate - fetching database metadata
+INFO main 2011-02-14 19:26:59,855 SchemaUpdate - updating schema
+DEBUG main 2011-02-14 19:26:59,855 Configuration$MetadataSourceQueue - Processing hbm.xml files
+DEBUG main 2011-02-14 19:26:59,855 Configuration$MetadataSourceQueue - Process annotated classes
+DEBUG main 2011-02-14 19:26:59,855 Configuration - processing fk mappings (*ToOne and JoinedSubclass)
+DEBUG main 2011-02-14 19:26:59,856 Configuration - processing extends queue
+DEBUG main 2011-02-14 19:26:59,856 Configuration - processing extends queue
+DEBUG main 2011-02-14 19:26:59,856 Configuration - processing collection mappings
+DEBUG main 2011-02-14 19:26:59,856 Configuration - processing native query and ResultSetMapping mappings
+DEBUG main 2011-02-14 19:26:59,856 Configuration - processing association property references
+DEBUG main 2011-02-14 19:26:59,856 Configuration - processing foreign key constraints
+DEBUG main 2011-02-14 19:26:59,856 Configuration - resolving reference to class: cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB
+DEBUG main 2011-02-14 19:26:59,857 Configuration - resolving reference to class: cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB
+INFO main 2011-02-14 19:26:59,863 TableMetadata - table found: testingBBS2.GROUP_MANAGER_GROUP_PUBLIC_KEY
+INFO main 2011-02-14 19:26:59,863 TableMetadata - columns: [id, group_public_key_v, group_public_key_g2, group_public_key_g1, group_public_key_u, group_public_key_h, group_public_key_omega]
+INFO main 2011-02-14 19:26:59,863 TableMetadata - foreign keys: []
+INFO main 2011-02-14 19:26:59,864 TableMetadata - indexes: [primary]
+INFO main 2011-02-14 19:26:59,869 TableMetadata - table found: testingBBS2.GROUP_MANAGER_PRIVATE_KEY
+INFO main 2011-02-14 19:26:59,869 TableMetadata - columns: [id, gamma, delta1, delta2, group_public_key_id_fk]
+INFO main 2011-02-14 19:26:59,869 TableMetadata - foreign keys: []
+INFO main 2011-02-14 19:26:59,870 TableMetadata - indexes: [primary, fk78fc4dd1ac689cb7]
+INFO main 2011-02-14 19:26:59,876 TableMetadata - table found: testingBBS2.GROUP_MANAGER_USER_PRIVATE_KEY
+INFO main 2011-02-14 19:26:59,877 TableMetadata - columns: [id, user_pk_a, is_revoked, issue_date, user_pk_x, is_issued, group_public_key_id_fk, user_identity, disc]
+INFO main 2011-02-14 19:26:59,877 TableMetadata - foreign keys: []
+INFO main 2011-02-14 19:26:59,878 TableMetadata - indexes: [primary, fkea1e6341ac689cb7]
+DEBUG main 2011-02-14 19:26:59,878 DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.MySQLDialect]
+DEBUG main 2011-02-14 19:26:59,878 DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.MySQLDialect]
+DEBUG main 2011-02-14 19:26:59,878 DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.MySQLDialect]
+INFO main 2011-02-14 19:26:59,878 SchemaUpdate - schema update complete
+DEBUG main 2011-02-14 19:26:59,878 SessionFactoryImpl - Checking 3 named HQL queries
+DEBUG main 2011-02-14 19:26:59,879 SessionFactoryImpl - Checking named query: open
+DEBUG main 2011-02-14 19:26:59,879 QueryTranslatorImpl - parse() - HQL: SELECT u FROM cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB u WHERE u.userPrivateKey.ai = ?1
+DEBUG main 2011-02-14 19:26:59,883 QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'FROM'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  |  |  |  +-[IDENT] Node: 'cat'
+    |  |     |  |  |  |  |  |  |  |  |  |  \-[IDENT] Node: 'uib'
+    |  |     |  |  |  |  |  |  |  |  |  \-[IDENT] Node: 'secom'
+    |  |     |  |  |  |  |  |  |  |  \-[IDENT] Node: 'crypto'
+    |  |     |  |  |  |  |  |  |  \-[IDENT] Node: 'sig'
+    |  |     |  |  |  |  |  |  \-[IDENT] Node: 'bbs'
+    |  |     |  |  |  |  |  \-[IDENT] Node: 'store'
+    |  |     |  |  |  |  \-[IDENT] Node: 'jpa'
+    |  |     |  |  |  \-[IDENT] Node: 'entities'
+    |  |     |  |  \-[IDENT] Node: 'impl'
+    |  |     |  \-[IDENT] Node: 'UserPrivateKeyDB'
+    |  |     \-[ALIAS] Node: 'u'
+    |  \-[SELECT] Node: 'SELECT'
+    |     \-[IDENT] Node: 'u'
+    \-[WHERE] Node: 'WHERE'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[DOT] Node: '.'
+          |  |  +-[IDENT] Node: 'u'
+          |  |  \-[IDENT] Node: 'userPrivateKey'
+          |  \-[IDENT] Node: 'ai'
+          \-[PARAM] Node: '?'
+             \-[NUM_INT] Node: '1'
+
+DEBUG main 2011-02-14 19:26:59,883 ErrorCounter - throwQueryException() : no errors
+DEBUG main 2011-02-14 19:26:59,884 HqlSqlBaseWalker - select << begin [level=1, statement=select]
+DEBUG main 2011-02-14 19:26:59,884 FromElement - FromClause{level=1} :  cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB (u) -> userprivat0_
+DEBUG main 2011-02-14 19:26:59,885 FromReferenceNode - Resolved :  u -> userprivat0_.ID
+DEBUG main 2011-02-14 19:26:59,885 FromReferenceNode - Resolved :  u -> userprivat0_.ID
+DEBUG main 2011-02-14 19:26:59,885 DotNode - getDataType() : userPrivateKey -> org.hibernate.type.ComponentType@3d3c4c09
+DEBUG main 2011-02-14 19:26:59,885 DotNode - Unresolved property path is now 'userPrivateKey.ai'
+DEBUG main 2011-02-14 19:26:59,885 FromReferenceNode - Resolved :  u.userPrivateKey -> userprivat0_.USER_PK_A
+DEBUG main 2011-02-14 19:26:59,886 DotNode - getDataType() : userPrivateKey.ai -> org.hibernate.type.StringType@220ca470
+DEBUG main 2011-02-14 19:26:59,886 FromReferenceNode - Resolved :  u.userPrivateKey.ai -> userprivat0_.USER_PK_A
+DEBUG main 2011-02-14 19:26:59,886 HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+DEBUG main 2011-02-14 19:26:59,886 HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} userprivat0_.ID ) ( FromClause{level=1} GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ ) ( WHERE ( = ( userprivat0_.USER_PK_A ( userprivat0_.USER_PK_A userprivat0_.ID userPrivateKey ) ai ) ? ) ) )
+DEBUG main 2011-02-14 19:26:59,887 JoinProcessor - Using FROM fragment [GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_]
+DEBUG main 2011-02-14 19:26:59,887 HqlSqlBaseWalker - select >> end [level=1, statement=select]
+DEBUG main 2011-02-14 19:26:59,887 QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (GROUP_MANAGER_USER_PRIVATE_KEY)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'userprivat0_.ID as ID18_' {alias=u, className=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB, tableAlias=userprivat0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'userprivat0_.ISSUE_DATE as ISSUE3_18_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_, userprivat0_.IS_ISSUED as IS4_18_, userprivat0_.IS_REVOKED as IS5_18_, userprivat0_.USER_IDENTITY as USER6_18_, userprivat0_.USER_PK_A as USER7_18_, userprivat0_.USER_PK_X as USER8_18_'
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[u], fromElementByTableAlias=[userprivat0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=u,role=null,tableName=GROUP_MANAGER_USER_PRIVATE_KEY,tableAlias=userprivat0_,origin=null,columns={,className=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB}}
+    \-[WHERE] SqlNode: 'WHERE'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'userprivat0_.USER_PK_A' {propertyName=ai,dereferenceType=ALL,propertyPath=userPrivateKey.ai,path=u.userPrivateKey.ai,tableAlias=userprivat0_,className=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB,classAlias=u}
+          |  +-[DOT] DotNode: 'userprivat0_.USER_PK_A' {propertyName=ai,dereferenceType=2,propertyPath=userPrivateKey.ai,path=u.userPrivateKey,tableAlias=userprivat0_,className=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB,classAlias=u}
+          |  |  +-[ALIAS_REF] IdentNode: 'userprivat0_.ID' {alias=u, className=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB, tableAlias=userprivat0_}
+          |  |  \-[IDENT] IdentNode: 'userPrivateKey' {originalText=userPrivateKey}
+          |  \-[IDENT] IdentNode: 'ai' {originalText=ai}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=1, expectedType=org.hibernate.type.StringType@220ca470}
+
+DEBUG main 2011-02-14 19:26:59,888 ErrorCounter - throwQueryException() : no errors
+DEBUG main 2011-02-14 19:26:59,888 QueryTranslatorImpl - HQL: SELECT u FROM cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB u WHERE u.userPrivateKey.ai = ?1
+DEBUG main 2011-02-14 19:26:59,888 QueryTranslatorImpl - SQL: select userprivat0_.ID as ID18_, userprivat0_.ISSUE_DATE as ISSUE3_18_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_, userprivat0_.IS_ISSUED as IS4_18_, userprivat0_.IS_REVOKED as IS5_18_, userprivat0_.USER_IDENTITY as USER6_18_, userprivat0_.USER_PK_A as USER7_18_, userprivat0_.USER_PK_X as USER8_18_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.USER_PK_A=?
+DEBUG main 2011-02-14 19:26:59,888 ErrorCounter - throwQueryException() : no errors
+DEBUG main 2011-02-14 19:26:59,889 SessionFactoryImpl - Checking named query: issueKeyPair
+DEBUG main 2011-02-14 19:26:59,889 QueryTranslatorImpl - parse() - HQL: SELECT u FROM cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB u WHERE u.issued = false
+DEBUG main 2011-02-14 19:26:59,892 QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'FROM'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  |  |  |  +-[IDENT] Node: 'cat'
+    |  |     |  |  |  |  |  |  |  |  |  |  \-[IDENT] Node: 'uib'
+    |  |     |  |  |  |  |  |  |  |  |  \-[IDENT] Node: 'secom'
+    |  |     |  |  |  |  |  |  |  |  \-[IDENT] Node: 'crypto'
+    |  |     |  |  |  |  |  |  |  \-[IDENT] Node: 'sig'
+    |  |     |  |  |  |  |  |  \-[IDENT] Node: 'bbs'
+    |  |     |  |  |  |  |  \-[IDENT] Node: 'store'
+    |  |     |  |  |  |  \-[IDENT] Node: 'jpa'
+    |  |     |  |  |  \-[IDENT] Node: 'entities'
+    |  |     |  |  \-[IDENT] Node: 'impl'
+    |  |     |  \-[IDENT] Node: 'UserPrivateKeyDB'
+    |  |     \-[ALIAS] Node: 'u'
+    |  \-[SELECT] Node: 'SELECT'
+    |     \-[IDENT] Node: 'u'
+    \-[WHERE] Node: 'WHERE'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'u'
+          |  \-[IDENT] Node: 'issued'
+          \-[FALSE] Node: 'false'
+
+DEBUG main 2011-02-14 19:26:59,892 ErrorCounter - throwQueryException() : no errors
+DEBUG main 2011-02-14 19:26:59,893 HqlSqlBaseWalker - select << begin [level=1, statement=select]
+DEBUG main 2011-02-14 19:26:59,893 FromElement - FromClause{level=1} :  cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB (u) -> userprivat0_
+DEBUG main 2011-02-14 19:26:59,894 FromReferenceNode - Resolved :  u -> userprivat0_.ID
+DEBUG main 2011-02-14 19:26:59,894 FromReferenceNode - Resolved :  u -> userprivat0_.ID
+DEBUG main 2011-02-14 19:26:59,894 DotNode - getDataType() : issued -> org.hibernate.type.BooleanType@105e55ab
+DEBUG main 2011-02-14 19:26:59,894 FromReferenceNode - Resolved :  u.issued -> userprivat0_.IS_ISSUED
+DEBUG main 2011-02-14 19:26:59,894 HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+DEBUG main 2011-02-14 19:26:59,895 HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} userprivat0_.ID ) ( FromClause{level=1} GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ ) ( WHERE ( = ( userprivat0_.IS_ISSUED userprivat0_.ID issued ) 0 ) ) )
+DEBUG main 2011-02-14 19:26:59,895 JoinProcessor - Using FROM fragment [GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_]
+DEBUG main 2011-02-14 19:26:59,895 HqlSqlBaseWalker - select >> end [level=1, statement=select]
+DEBUG main 2011-02-14 19:26:59,896 QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (GROUP_MANAGER_USER_PRIVATE_KEY)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'userprivat0_.ID as ID18_' {alias=u, className=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB, tableAlias=userprivat0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'userprivat0_.ISSUE_DATE as ISSUE3_18_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_, userprivat0_.IS_ISSUED as IS4_18_, userprivat0_.IS_REVOKED as IS5_18_, userprivat0_.USER_IDENTITY as USER6_18_, userprivat0_.USER_PK_A as USER7_18_, userprivat0_.USER_PK_X as USER8_18_'
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[u], fromElementByTableAlias=[userprivat0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=u,role=null,tableName=GROUP_MANAGER_USER_PRIVATE_KEY,tableAlias=userprivat0_,origin=null,columns={,className=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB}}
+    \-[WHERE] SqlNode: 'WHERE'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'userprivat0_.IS_ISSUED' {propertyName=issued,dereferenceType=ALL,propertyPath=issued,path=u.issued,tableAlias=userprivat0_,className=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB,classAlias=u}
+          |  +-[ALIAS_REF] IdentNode: 'userprivat0_.ID' {alias=u, className=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB, tableAlias=userprivat0_}
+          |  \-[IDENT] IdentNode: 'issued' {originalText=issued}
+          \-[FALSE] BooleanLiteralNode: '0'
+
+DEBUG main 2011-02-14 19:26:59,896 ErrorCounter - throwQueryException() : no errors
+DEBUG main 2011-02-14 19:26:59,897 QueryTranslatorImpl - HQL: SELECT u FROM cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB u WHERE u.issued = false
+DEBUG main 2011-02-14 19:26:59,897 QueryTranslatorImpl - SQL: select userprivat0_.ID as ID18_, userprivat0_.ISSUE_DATE as ISSUE3_18_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_, userprivat0_.IS_ISSUED as IS4_18_, userprivat0_.IS_REVOKED as IS5_18_, userprivat0_.USER_IDENTITY as USER6_18_, userprivat0_.USER_PK_A as USER7_18_, userprivat0_.USER_PK_X as USER8_18_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.IS_ISSUED=0
+DEBUG main 2011-02-14 19:26:59,897 ErrorCounter - throwQueryException() : no errors
+DEBUG main 2011-02-14 19:26:59,898 SessionFactoryImpl - Checking named query: isIssued
+DEBUG main 2011-02-14 19:26:59,898 QueryTranslatorImpl - parse() - HQL: SELECT u FROM cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB u WHERE u.uIdentity = ?1
+DEBUG main 2011-02-14 19:26:59,901 QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'FROM'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  |  |  |  +-[IDENT] Node: 'cat'
+    |  |     |  |  |  |  |  |  |  |  |  |  \-[IDENT] Node: 'uib'
+    |  |     |  |  |  |  |  |  |  |  |  \-[IDENT] Node: 'secom'
+    |  |     |  |  |  |  |  |  |  |  \-[IDENT] Node: 'crypto'
+    |  |     |  |  |  |  |  |  |  \-[IDENT] Node: 'sig'
+    |  |     |  |  |  |  |  |  \-[IDENT] Node: 'bbs'
+    |  |     |  |  |  |  |  \-[IDENT] Node: 'store'
+    |  |     |  |  |  |  \-[IDENT] Node: 'jpa'
+    |  |     |  |  |  \-[IDENT] Node: 'entities'
+    |  |     |  |  \-[IDENT] Node: 'impl'
+    |  |     |  \-[IDENT] Node: 'UserPrivateKeyDB'
+    |  |     \-[ALIAS] Node: 'u'
+    |  \-[SELECT] Node: 'SELECT'
+    |     \-[IDENT] Node: 'u'
+    \-[WHERE] Node: 'WHERE'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'u'
+          |  \-[IDENT] Node: 'uIdentity'
+          \-[PARAM] Node: '?'
+             \-[NUM_INT] Node: '1'
+
+DEBUG main 2011-02-14 19:26:59,901 ErrorCounter - throwQueryException() : no errors
+DEBUG main 2011-02-14 19:26:59,902 HqlSqlBaseWalker - select << begin [level=1, statement=select]
+DEBUG main 2011-02-14 19:26:59,902 FromElement - FromClause{level=1} :  cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB (u) -> userprivat0_
+DEBUG main 2011-02-14 19:26:59,902 FromReferenceNode - Resolved :  u -> userprivat0_.ID
+DEBUG main 2011-02-14 19:26:59,903 FromReferenceNode - Resolved :  u -> userprivat0_.ID
+DEBUG main 2011-02-14 19:26:59,903 DotNode - getDataType() : uIdentity -> org.hibernate.type.StringType@220ca470
+DEBUG main 2011-02-14 19:26:59,903 FromReferenceNode - Resolved :  u.uIdentity -> userprivat0_.USER_IDENTITY
+DEBUG main 2011-02-14 19:26:59,904 HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+DEBUG main 2011-02-14 19:26:59,904 HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} userprivat0_.ID ) ( FromClause{level=1} GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ ) ( WHERE ( = ( userprivat0_.USER_IDENTITY userprivat0_.ID uIdentity ) ? ) ) )
+DEBUG main 2011-02-14 19:26:59,904 JoinProcessor - Using FROM fragment [GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_]
+DEBUG main 2011-02-14 19:26:59,905 HqlSqlBaseWalker - select >> end [level=1, statement=select]
+DEBUG main 2011-02-14 19:26:59,905 QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (GROUP_MANAGER_USER_PRIVATE_KEY)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'userprivat0_.ID as ID18_' {alias=u, className=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB, tableAlias=userprivat0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'userprivat0_.ISSUE_DATE as ISSUE3_18_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_, userprivat0_.IS_ISSUED as IS4_18_, userprivat0_.IS_REVOKED as IS5_18_, userprivat0_.USER_IDENTITY as USER6_18_, userprivat0_.USER_PK_A as USER7_18_, userprivat0_.USER_PK_X as USER8_18_'
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[u], fromElementByTableAlias=[userprivat0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=u,role=null,tableName=GROUP_MANAGER_USER_PRIVATE_KEY,tableAlias=userprivat0_,origin=null,columns={,className=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB}}
+    \-[WHERE] SqlNode: 'WHERE'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'userprivat0_.USER_IDENTITY' {propertyName=uIdentity,dereferenceType=ALL,propertyPath=uIdentity,path=u.uIdentity,tableAlias=userprivat0_,className=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB,classAlias=u}
+          |  +-[ALIAS_REF] IdentNode: 'userprivat0_.ID' {alias=u, className=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB, tableAlias=userprivat0_}
+          |  \-[IDENT] IdentNode: 'uIdentity' {originalText=uIdentity}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=1, expectedType=org.hibernate.type.StringType@220ca470}
+
+DEBUG main 2011-02-14 19:26:59,905 ErrorCounter - throwQueryException() : no errors
+DEBUG main 2011-02-14 19:26:59,906 QueryTranslatorImpl - HQL: SELECT u FROM cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB u WHERE u.uIdentity = ?1
+DEBUG main 2011-02-14 19:26:59,906 QueryTranslatorImpl - SQL: select userprivat0_.ID as ID18_, userprivat0_.ISSUE_DATE as ISSUE3_18_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_, userprivat0_.IS_ISSUED as IS4_18_, userprivat0_.IS_REVOKED as IS5_18_, userprivat0_.USER_IDENTITY as USER6_18_, userprivat0_.USER_PK_A as USER7_18_, userprivat0_.USER_PK_X as USER8_18_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.USER_IDENTITY=?
+DEBUG main 2011-02-14 19:26:59,906 ErrorCounter - throwQueryException() : no errors
+DEBUG main 2011-02-14 19:26:59,906 SessionFactoryImpl - Checking 0 named SQL queries
+DEBUG main 2011-02-14 19:26:59,910 SessionImpl - opened session at timestamp: 12977080199
+DEBUG main 2011-02-14 19:26:59,910 JDBCTransaction - begin
+DEBUG main 2011-02-14 19:26:59,910 ConnectionManager - opening JDBC connection
+DEBUG main 2011-02-14 19:26:59,910 JDBCTransaction - current autocommit status: true
+DEBUG main 2011-02-14 19:26:59,910 JDBCTransaction - disabling autocommit
+DEBUG main 2011-02-14 19:26:59,911 AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,911 SQLStatementLogger - select userprivat0_.ID as ID18_, userprivat0_.ISSUE_DATE as ISSUE3_18_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_, userprivat0_.IS_ISSUED as IS4_18_, userprivat0_.IS_REVOKED as IS5_18_, userprivat0_.USER_IDENTITY as USER6_18_, userprivat0_.USER_PK_A as USER7_18_, userprivat0_.USER_PK_X as USER8_18_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.USER_IDENTITY=?
+DEBUG main 2011-02-14 19:26:59,912 AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,912 AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,913 AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,913 StatefulPersistenceContext - initializing non-lazy collections
+DEBUG main 2011-02-14 19:26:59,913 AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,913 SQLStatementLogger - select userprivat0_.ID as ID18_, userprivat0_.ISSUE_DATE as ISSUE3_18_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_, userprivat0_.IS_ISSUED as IS4_18_, userprivat0_.IS_REVOKED as IS5_18_, userprivat0_.USER_IDENTITY as USER6_18_, userprivat0_.USER_PK_A as USER7_18_, userprivat0_.USER_PK_X as USER8_18_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.IS_ISSUED=0
+DEBUG main 2011-02-14 19:26:59,915 AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,915 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#2]
+DEBUG main 2011-02-14 19:26:59,916 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#3]
+DEBUG main 2011-02-14 19:26:59,916 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#4]
+DEBUG main 2011-02-14 19:26:59,916 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#5]
+DEBUG main 2011-02-14 19:26:59,917 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#6]
+DEBUG main 2011-02-14 19:26:59,917 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#7]
+DEBUG main 2011-02-14 19:26:59,917 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#8]
+DEBUG main 2011-02-14 19:26:59,918 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#9]
+DEBUG main 2011-02-14 19:26:59,918 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#10]
+DEBUG main 2011-02-14 19:26:59,918 AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,918 AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,918 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#2]
+DEBUG main 2011-02-14 19:26:59,919 Loader - loading entity: [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1]
+DEBUG main 2011-02-14 19:26:59,919 AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,919 SQLStatementLogger - select grouppubli0_.ID as ID20_1_, grouppubli0_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_H as GROUP4_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_U as GROUP6_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_V as GROUP7_20_1_, groupmanag1_.ID as ID19_0_, groupmanag1_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_0_, groupmanag1_.DELTA1 as DELTA2_19_0_, groupmanag1_.DELTA2 as DELTA3_19_0_, groupmanag1_.GAMMA as GAMMA19_0_ from GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli0_ left outer join GROUP_MANAGER_PRIVATE_KEY groupmanag1_ on grouppubli0_.ID=groupmanag1_.GROUP_PUBLIC_KEY_ID_FK where grouppubli0_.ID=?
+DEBUG main 2011-02-14 19:26:59,921 AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,921 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB#1], EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1]
+DEBUG main 2011-02-14 19:26:59,921 AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,922 AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,922 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB#1]
+DEBUG main 2011-02-14 19:26:59,925 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB#1]
+DEBUG main 2011-02-14 19:26:59,925 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1]
+DEBUG main 2011-02-14 19:26:59,925 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1]
+DEBUG main 2011-02-14 19:26:59,925 Loader - done entity load
+DEBUG main 2011-02-14 19:26:59,926 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#2]
+DEBUG main 2011-02-14 19:26:59,926 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#3]
+DEBUG main 2011-02-14 19:26:59,926 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#3]
+DEBUG main 2011-02-14 19:26:59,926 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#4]
+DEBUG main 2011-02-14 19:26:59,926 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#4]
+DEBUG main 2011-02-14 19:26:59,926 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#5]
+DEBUG main 2011-02-14 19:26:59,927 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#5]
+DEBUG main 2011-02-14 19:26:59,927 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#6]
+DEBUG main 2011-02-14 19:26:59,927 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#6]
+DEBUG main 2011-02-14 19:26:59,927 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#7]
+DEBUG main 2011-02-14 19:26:59,927 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#7]
+DEBUG main 2011-02-14 19:26:59,927 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#8]
+DEBUG main 2011-02-14 19:26:59,928 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#8]
+DEBUG main 2011-02-14 19:26:59,928 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#9]
+DEBUG main 2011-02-14 19:26:59,928 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#9]
+DEBUG main 2011-02-14 19:26:59,928 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#10]
+DEBUG main 2011-02-14 19:26:59,928 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#10]
+DEBUG main 2011-02-14 19:26:59,928 StatefulPersistenceContext - initializing non-lazy collections
+DEBUG main 2011-02-14 19:26:59,929 JDBCTransaction - commit
+DEBUG main 2011-02-14 19:26:59,929 AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main 2011-02-14 19:26:59,929 AbstractFlushingEventListener - dirty checking collections
+DEBUG main 2011-02-14 19:26:59,930 Collections - Collection found: [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB.users#1], was: [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB.users#1] (uninitialized)
+DEBUG main 2011-02-14 19:26:59,930 AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 11 objects
+DEBUG main 2011-02-14 19:26:59,930 AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+DEBUG main 2011-02-14 19:26:59,930 Printer - listing entities:
+DEBUG main 2011-02-14 19:26:59,931 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=2, userPrivateKey=component[ai,xi]{ai=1befe303e84dfd4eb118d8365389fc27ac8a8430150318f9c42ca39c66ded3af19157a1543270059e40c9475, xi=00dc32ea12e820e694f40833417f32dc3526ced0bd}, issued=true, dateIssued=Mon Feb 14 19:26:59 CET 2011, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=1}
+DEBUG main 2011-02-14 19:26:59,931 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB{groupPublicKey=component[g1,g2,h,omega,u,v]{v=20789390f85a5f04b446434fabde8fe4a5f488e0fc230e35857efe2748d22891c5dd373739dcce9c420aedd0, u=1452ae4eb76b05a3a575c65a8c95b0f417d3ccf456f316491ebf8425c4c6793623fe2657e2b217a5b99a25d6, g2=2c1028f8451c759a46330289b1c8442d62008c5921400f3197aec468cf2d301391745b827adf115a0b49eb131fbb094a1ddfdf4470121bbf2f5cda6607b853a2de672eb80f29741e213ebf94fbf660ee923a13536c59b38d3f22e50245092c529e12f1dff967b9cd90d48b32b8804583701322bb44ee0dcee62eca05221f41c9a0529dd3, g1=4f615d1dfd7fb4cd5a455c2e84fd226879e194858f343265ff000e8a9843342f694bbfc48f2a16a3d0c8477b, omega=54bcd357c49190387f1a0302421f7ee8ea357f6c3768355373f25cd4b22a676fcc3c904c1104013acc4357a31befc5a5ab7b0e3dc2ce91a08b08c1d359d6cd4987e84080cf730946893e3fe153692af1184b38329cd4d6875b40b685e8d6ad11ee3f2ce5fd09828a64e536bbb6c5081d21ee6722459e332826859489a5ec12aaf2af5027, h=408fed09a25699aba123fff343183da3052d077b4ed90cce94d7b78b0af79751456e37b38fb786f6beebd938}, id=1, users=<uninitialized>, gmskDB=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB#1}
+DEBUG main 2011-02-14 19:26:59,931 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=10, userPrivateKey=component[ai,xi]{ai=24f6a806052ac9f944df4cb2c29f19a8f11b046520fb57b45a94b7ed3af204aabb19dd894c821fda07ba09d5, xi=000351cbded246749fe0ccaef0ade6757f2c5923a9}, issued=false, dateIssued=2011-02-14 19:26:59.0, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=null}
+DEBUG main 2011-02-14 19:26:59,931 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=9, userPrivateKey=component[ai,xi]{ai=3fe7d94de20086e1e656e43f780959cb591db3cbee0527299d3f9e07c844d29c6efad27349782d0ecfc8faab, xi=01314a95d6e8ea55d95fe982205f35b98f2aff920b}, issued=false, dateIssued=2011-02-14 19:26:59.0, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=null}
+DEBUG main 2011-02-14 19:26:59,931 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=8, userPrivateKey=component[ai,xi]{ai=13afb2b37af4d8af6822d232f79ac65f5fd2332a7e843e4ce2eceaf6f1ad969485f0d92e6332272dd87c9382, xi=0000bbce587438507253b5418c7943fbded01de166}, issued=false, dateIssued=2011-02-14 19:26:59.0, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=null}
+DEBUG main 2011-02-14 19:26:59,932 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=7, userPrivateKey=component[ai,xi]{ai=4eebf848e7307d1fb05c2bdf48e5fdee44a0bfbc2e4e2314110ac4e21f2900a7700a294f88b9c907de1df378, xi=0197fad7ef694e829e3084a50e2ce3d8b2fe15f1b7}, issued=false, dateIssued=2011-02-14 19:26:59.0, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=null}
+DEBUG main 2011-02-14 19:26:59,932 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=6, userPrivateKey=component[ai,xi]{ai=35f4f67f6da6b73dc6b30e1795791ea4e45aeb4376e704eb3162a26ce347901040560b3bf69b9439c0e65f3b, xi=009d45469e3102e53befcf23bf09e5b539b4119f36}, issued=false, dateIssued=2011-02-14 19:26:59.0, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=null}
+DEBUG main 2011-02-14 19:26:59,932 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB{id=1, gpkDB=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, groupManagerPrivateKey=component[delta1,delta2,gamma]{gamma=0084be9f6114931a69f5e694f48529370d2d68cbec, delta1=00169d13a95de54fb349aa4582f0e2f0774b97d46d, delta2=002c4f3d3d9218322dea252ef3d45cbfd0f13f2096}}
+DEBUG main 2011-02-14 19:26:59,932 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=5, userPrivateKey=component[ai,xi]{ai=0937d97289e65e91063989964e0e82f47206369c490b59334b8070e49b4d5895474def46360a6298a5835f68, xi=001b0d9fa14c668b72a3ca07e69766471a60fa1804}, issued=false, dateIssued=2011-02-14 19:26:59.0, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=null}
+DEBUG main 2011-02-14 19:26:59,932 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=4, userPrivateKey=component[ai,xi]{ai=43dea5a8035342dc02e118ba704b02c80ef319a62b662407b624850cd9fb9aa12a558a0e7b44cc038c100b19, xi=017fb129c9e546cd06904574857d606b3ad37cbfcd}, issued=false, dateIssued=2011-02-14 19:26:59.0, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=null}
+DEBUG main 2011-02-14 19:26:59,933 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=3, userPrivateKey=component[ai,xi]{ai=54ab1385a7b9e4749bc13fe84698a3d3601476e5d31b0af978651b6e091eac0e395b768b8b8aa882b761075f, xi=006c71ac0e13033b83f9328f7e3baa3c94680888ae}, issued=false, dateIssued=2011-02-14 19:26:59.0, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=null}
+DEBUG main 2011-02-14 19:26:59,933 AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,933 SQLStatementLogger - update GROUP_MANAGER_USER_PRIVATE_KEY set ISSUE_DATE=?, GROUP_PUBLIC_KEY_ID_FK=?, IS_ISSUED=?, IS_REVOKED=?, USER_IDENTITY=?, USER_PK_A=?, USER_PK_X=? where ID=?
+DEBUG main 2011-02-14 19:26:59,935 BatchingBatcher - Executing batch size: 1
+DEBUG main 2011-02-14 19:26:59,935 AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,936 JDBCTransaction - re-enabling autocommit
+DEBUG main 2011-02-14 19:26:59,936 JDBCTransaction - committed JDBC Connection
+DEBUG main 2011-02-14 19:26:59,936 ConnectionManager - aggressively releasing JDBC connection
+DEBUG main 2011-02-14 19:26:59,936 ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+INFO main 2011-02-14 19:26:59,936 SessionFactoryImpl - closing
+INFO main 2011-02-14 19:26:59,936 DriverManagerConnectionProvider - cleaning up connection pool: jdbc:mysql://localhost/testingBBS2
+DEBUG main 2011-02-14 19:26:59,937 SessionImpl - opened session at timestamp: 12977080199
+DEBUG main 2011-02-14 19:26:59,937 JDBCTransaction - begin
+DEBUG main 2011-02-14 19:26:59,945 ConnectionManager - opening JDBC connection
+DEBUG main 2011-02-14 19:26:59,945 DriverManagerConnectionProvider - opening new JDBC connection
+DEBUG main 2011-02-14 19:26:59,954 DriverManagerConnectionProvider - created connection to: jdbc:mysql://localhost/testingBBS2, Isolation Level: 4
+DEBUG main 2011-02-14 19:26:59,955 JDBCTransaction - current autocommit status: true
+DEBUG main 2011-02-14 19:26:59,955 JDBCTransaction - disabling autocommit
+DEBUG main 2011-02-14 19:26:59,955 AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,955 SQLStatementLogger - select userprivat0_.ID as ID18_, userprivat0_.ISSUE_DATE as ISSUE3_18_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_, userprivat0_.IS_ISSUED as IS4_18_, userprivat0_.IS_REVOKED as IS5_18_, userprivat0_.USER_IDENTITY as USER6_18_, userprivat0_.USER_PK_A as USER7_18_, userprivat0_.USER_PK_X as USER8_18_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.USER_IDENTITY=?
+DEBUG main 2011-02-14 19:26:59,956 AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,957 AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,957 AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,957 StatefulPersistenceContext - initializing non-lazy collections
+DEBUG main 2011-02-14 19:26:59,957 AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,957 SQLStatementLogger - select userprivat0_.ID as ID18_, userprivat0_.ISSUE_DATE as ISSUE3_18_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_, userprivat0_.IS_ISSUED as IS4_18_, userprivat0_.IS_REVOKED as IS5_18_, userprivat0_.USER_IDENTITY as USER6_18_, userprivat0_.USER_PK_A as USER7_18_, userprivat0_.USER_PK_X as USER8_18_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.IS_ISSUED=0
+DEBUG main 2011-02-14 19:26:59,958 AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,958 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#3]
+DEBUG main 2011-02-14 19:26:59,959 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#4]
+DEBUG main 2011-02-14 19:26:59,959 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#5]
+DEBUG main 2011-02-14 19:26:59,959 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#6]
+DEBUG main 2011-02-14 19:26:59,960 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#7]
+DEBUG main 2011-02-14 19:26:59,960 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#8]
+DEBUG main 2011-02-14 19:26:59,960 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#9]
+DEBUG main 2011-02-14 19:26:59,961 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#10]
+DEBUG main 2011-02-14 19:26:59,961 AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,961 AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,961 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#3]
+DEBUG main 2011-02-14 19:26:59,961 Loader - loading entity: [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1]
+DEBUG main 2011-02-14 19:26:59,962 AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,962 SQLStatementLogger - select grouppubli0_.ID as ID20_1_, grouppubli0_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_H as GROUP4_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_U as GROUP6_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_V as GROUP7_20_1_, groupmanag1_.ID as ID19_0_, groupmanag1_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_0_, groupmanag1_.DELTA1 as DELTA2_19_0_, groupmanag1_.DELTA2 as DELTA3_19_0_, groupmanag1_.GAMMA as GAMMA19_0_ from GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli0_ left outer join GROUP_MANAGER_PRIVATE_KEY groupmanag1_ on grouppubli0_.ID=groupmanag1_.GROUP_PUBLIC_KEY_ID_FK where grouppubli0_.ID=?
+DEBUG main 2011-02-14 19:26:59,963 AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,964 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB#1], EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1]
+DEBUG main 2011-02-14 19:26:59,964 AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,964 AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,965 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB#1]
+DEBUG main 2011-02-14 19:26:59,965 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB#1]
+DEBUG main 2011-02-14 19:26:59,965 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1]
+DEBUG main 2011-02-14 19:26:59,965 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1]
+DEBUG main 2011-02-14 19:26:59,965 Loader - done entity load
+DEBUG main 2011-02-14 19:26:59,966 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#3]
+DEBUG main 2011-02-14 19:26:59,966 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#4]
+DEBUG main 2011-02-14 19:26:59,966 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#4]
+DEBUG main 2011-02-14 19:26:59,966 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#5]
+DEBUG main 2011-02-14 19:26:59,966 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#5]
+DEBUG main 2011-02-14 19:26:59,966 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#6]
+DEBUG main 2011-02-14 19:26:59,967 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#6]
+DEBUG main 2011-02-14 19:26:59,967 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#7]
+DEBUG main 2011-02-14 19:26:59,967 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#7]
+DEBUG main 2011-02-14 19:26:59,967 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#8]
+DEBUG main 2011-02-14 19:26:59,967 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#8]
+DEBUG main 2011-02-14 19:26:59,968 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#9]
+DEBUG main 2011-02-14 19:26:59,968 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#9]
+DEBUG main 2011-02-14 19:26:59,968 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#10]
+DEBUG main 2011-02-14 19:26:59,976 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#10]
+DEBUG main 2011-02-14 19:26:59,976 StatefulPersistenceContext - initializing non-lazy collections
+DEBUG main 2011-02-14 19:26:59,977 JDBCTransaction - commit
+DEBUG main 2011-02-14 19:26:59,977 AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main 2011-02-14 19:26:59,977 AbstractFlushingEventListener - dirty checking collections
+DEBUG main 2011-02-14 19:26:59,978 Collections - Collection found: [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB.users#1], was: [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB.users#1] (uninitialized)
+DEBUG main 2011-02-14 19:26:59,978 AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 10 objects
+DEBUG main 2011-02-14 19:26:59,978 AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+DEBUG main 2011-02-14 19:26:59,979 Printer - listing entities:
+DEBUG main 2011-02-14 19:26:59,979 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB{groupPublicKey=component[g1,g2,h,omega,u,v]{v=20789390f85a5f04b446434fabde8fe4a5f488e0fc230e35857efe2748d22891c5dd373739dcce9c420aedd0, u=1452ae4eb76b05a3a575c65a8c95b0f417d3ccf456f316491ebf8425c4c6793623fe2657e2b217a5b99a25d6, g2=2c1028f8451c759a46330289b1c8442d62008c5921400f3197aec468cf2d301391745b827adf115a0b49eb131fbb094a1ddfdf4470121bbf2f5cda6607b853a2de672eb80f29741e213ebf94fbf660ee923a13536c59b38d3f22e50245092c529e12f1dff967b9cd90d48b32b8804583701322bb44ee0dcee62eca05221f41c9a0529dd3, g1=4f615d1dfd7fb4cd5a455c2e84fd226879e194858f343265ff000e8a9843342f694bbfc48f2a16a3d0c8477b, omega=54bcd357c49190387f1a0302421f7ee8ea357f6c3768355373f25cd4b22a676fcc3c904c1104013acc4357a31befc5a5ab7b0e3dc2ce91a08b08c1d359d6cd4987e84080cf730946893e3fe153692af1184b38329cd4d6875b40b685e8d6ad11ee3f2ce5fd09828a64e536bbb6c5081d21ee6722459e332826859489a5ec12aaf2af5027, h=408fed09a25699aba123fff343183da3052d077b4ed90cce94d7b78b0af79751456e37b38fb786f6beebd938}, id=1, users=<uninitialized>, gmskDB=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB#1}
+DEBUG main 2011-02-14 19:26:59,979 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=10, userPrivateKey=component[ai,xi]{ai=24f6a806052ac9f944df4cb2c29f19a8f11b046520fb57b45a94b7ed3af204aabb19dd894c821fda07ba09d5, xi=000351cbded246749fe0ccaef0ade6757f2c5923a9}, issued=false, dateIssued=2011-02-14 19:26:59.0, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=null}
+DEBUG main 2011-02-14 19:26:59,979 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=9, userPrivateKey=component[ai,xi]{ai=3fe7d94de20086e1e656e43f780959cb591db3cbee0527299d3f9e07c844d29c6efad27349782d0ecfc8faab, xi=01314a95d6e8ea55d95fe982205f35b98f2aff920b}, issued=false, dateIssued=2011-02-14 19:26:59.0, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=null}
+DEBUG main 2011-02-14 19:26:59,979 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=8, userPrivateKey=component[ai,xi]{ai=13afb2b37af4d8af6822d232f79ac65f5fd2332a7e843e4ce2eceaf6f1ad969485f0d92e6332272dd87c9382, xi=0000bbce587438507253b5418c7943fbded01de166}, issued=false, dateIssued=2011-02-14 19:26:59.0, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=null}
+DEBUG main 2011-02-14 19:26:59,980 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=7, userPrivateKey=component[ai,xi]{ai=4eebf848e7307d1fb05c2bdf48e5fdee44a0bfbc2e4e2314110ac4e21f2900a7700a294f88b9c907de1df378, xi=0197fad7ef694e829e3084a50e2ce3d8b2fe15f1b7}, issued=false, dateIssued=2011-02-14 19:26:59.0, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=null}
+DEBUG main 2011-02-14 19:26:59,980 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=6, userPrivateKey=component[ai,xi]{ai=35f4f67f6da6b73dc6b30e1795791ea4e45aeb4376e704eb3162a26ce347901040560b3bf69b9439c0e65f3b, xi=009d45469e3102e53befcf23bf09e5b539b4119f36}, issued=false, dateIssued=2011-02-14 19:26:59.0, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=null}
+DEBUG main 2011-02-14 19:26:59,980 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB{id=1, gpkDB=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, groupManagerPrivateKey=component[delta1,delta2,gamma]{gamma=0084be9f6114931a69f5e694f48529370d2d68cbec, delta1=00169d13a95de54fb349aa4582f0e2f0774b97d46d, delta2=002c4f3d3d9218322dea252ef3d45cbfd0f13f2096}}
+DEBUG main 2011-02-14 19:26:59,980 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=5, userPrivateKey=component[ai,xi]{ai=0937d97289e65e91063989964e0e82f47206369c490b59334b8070e49b4d5895474def46360a6298a5835f68, xi=001b0d9fa14c668b72a3ca07e69766471a60fa1804}, issued=false, dateIssued=2011-02-14 19:26:59.0, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=null}
+DEBUG main 2011-02-14 19:26:59,980 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=4, userPrivateKey=component[ai,xi]{ai=43dea5a8035342dc02e118ba704b02c80ef319a62b662407b624850cd9fb9aa12a558a0e7b44cc038c100b19, xi=017fb129c9e546cd06904574857d606b3ad37cbfcd}, issued=false, dateIssued=2011-02-14 19:26:59.0, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=null}
+DEBUG main 2011-02-14 19:26:59,981 Printer - cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB{id=3, userPrivateKey=component[ai,xi]{ai=54ab1385a7b9e4749bc13fe84698a3d3601476e5d31b0af978651b6e091eac0e395b768b8b8aa882b761075f, xi=006c71ac0e13033b83f9328f7e3baa3c94680888ae}, issued=true, dateIssued=Mon Feb 14 19:26:59 CET 2011, group=cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1, revoked=false, uIdentity=2}
+DEBUG main 2011-02-14 19:26:59,981 AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,981 SQLStatementLogger - update GROUP_MANAGER_USER_PRIVATE_KEY set ISSUE_DATE=?, GROUP_PUBLIC_KEY_ID_FK=?, IS_ISSUED=?, IS_REVOKED=?, USER_IDENTITY=?, USER_PK_A=?, USER_PK_X=? where ID=?
+DEBUG main 2011-02-14 19:26:59,988 BatchingBatcher - Executing batch size: 1
+DEBUG main 2011-02-14 19:26:59,989 AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,989 JDBCTransaction - re-enabling autocommit
+DEBUG main 2011-02-14 19:26:59,989 JDBCTransaction - committed JDBC Connection
+DEBUG main 2011-02-14 19:26:59,989 ConnectionManager - aggressively releasing JDBC connection
+DEBUG main 2011-02-14 19:26:59,989 ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+DEBUG main 2011-02-14 19:26:59,990 SessionImpl - opened session at timestamp: 12977080199
+DEBUG main 2011-02-14 19:26:59,990 JDBCTransaction - begin
+DEBUG main 2011-02-14 19:26:59,990 ConnectionManager - opening JDBC connection
+DEBUG main 2011-02-14 19:26:59,990 JDBCTransaction - current autocommit status: true
+DEBUG main 2011-02-14 19:26:59,990 JDBCTransaction - disabling autocommit
+DEBUG main 2011-02-14 19:26:59,990 AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,991 SQLStatementLogger - select userprivat0_.ID as ID18_, userprivat0_.ISSUE_DATE as ISSUE3_18_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_, userprivat0_.IS_ISSUED as IS4_18_, userprivat0_.IS_REVOKED as IS5_18_, userprivat0_.USER_IDENTITY as USER6_18_, userprivat0_.USER_PK_A as USER7_18_, userprivat0_.USER_PK_X as USER8_18_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.USER_IDENTITY=?
+DEBUG main 2011-02-14 19:26:59,992 AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,993 AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,993 AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,993 StatefulPersistenceContext - initializing non-lazy collections
+DEBUG main 2011-02-14 19:26:59,993 AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,993 SQLStatementLogger - select userprivat0_.ID as ID18_, userprivat0_.ISSUE_DATE as ISSUE3_18_, userprivat0_.GROUP_PUBLIC_KEY_ID_FK as GROUP9_18_, userprivat0_.IS_ISSUED as IS4_18_, userprivat0_.IS_REVOKED as IS5_18_, userprivat0_.USER_IDENTITY as USER6_18_, userprivat0_.USER_PK_A as USER7_18_, userprivat0_.USER_PK_X as USER8_18_ from GROUP_MANAGER_USER_PRIVATE_KEY userprivat0_ where userprivat0_.IS_ISSUED=0
+DEBUG main 2011-02-14 19:26:59,994 AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
+DEBUG main 2011-02-14 19:26:59,995 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#4]
+DEBUG main 2011-02-14 19:26:59,995 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#5]
+DEBUG main 2011-02-14 19:26:59,995 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#6]
+DEBUG main 2011-02-14 19:26:59,996 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#7]
+DEBUG main 2011-02-14 19:26:59,996 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#8]
+DEBUG main 2011-02-14 19:26:59,996 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#9]
+DEBUG main 2011-02-14 19:26:59,996 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#10]
+DEBUG main 2011-02-14 19:26:59,997 AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,997 AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main 2011-02-14 19:26:59,997 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.UserPrivateKeyDB#4]
+DEBUG main 2011-02-14 19:26:59,998 Loader - loading entity: [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1]
+DEBUG main 2011-02-14 19:26:59,998 AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main 2011-02-14 19:27:00,007 SQLStatementLogger - select grouppubli0_.ID as ID20_1_, grouppubli0_.GROUP_PUBLIC_KEY_G1 as GROUP2_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_G2 as GROUP3_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_H as GROUP4_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_OMEGA as GROUP5_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_U as GROUP6_20_1_, grouppubli0_.GROUP_PUBLIC_KEY_V as GROUP7_20_1_, groupmanag1_.ID as ID19_0_, groupmanag1_.GROUP_PUBLIC_KEY_ID_FK as GROUP5_19_0_, groupmanag1_.DELTA1 as DELTA2_19_0_, groupmanag1_.DELTA2 as DELTA3_19_0_, groupmanag1_.GAMMA as GAMMA19_0_ from GROUP_MANAGER_GROUP_PUBLIC_KEY grouppubli0_ left outer join GROUP_MANAGER_PRIVATE_KEY groupmanag1_ on grouppubli0_.ID=groupmanag1_.GROUP_PUBLIC_KEY_ID_FK where grouppubli0_.ID=?
+DEBUG main 2011-02-14 19:27:00,010 AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
+DEBUG main 2011-02-14 19:27:00,012 Loader - result row: EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB#1], EntityKey[cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1]
+DEBUG main 2011-02-14 19:27:00,013 AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
+DEBUG main 2011-02-14 19:27:00,013 AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main 2011-02-14 19:27:00,013 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB#1]
+DEBUG main 2011-02-14 19:27:00,013 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupManagerPrivateKeyDB#1]
+DEBUG main 2011-02-14 19:27:00,013 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1]
+DEBUG main 2011-02-14 19:27:00,014 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.sig.bbs.store.jpa.entities.impl.GroupPublicKeyDB#1]
+DEBUG main 2011-02-14 19:27:00,014 Loader - done entity load

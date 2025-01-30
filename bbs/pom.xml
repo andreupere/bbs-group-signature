@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>cat.uib.secom</groupId>
+  <artifactId>bbs</artifactId>
+  <version>0.0.10-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>bbs</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <scm>  
+     <connection>  
+         scm:svn:http://dev.apaspai.es/svn/bbs/trunk  
+     </connection>  
+     <developerConnection>  
+         scm:svn:http://dev.apaspai.es/svn/bbs/trunk  
+     </developerConnection>  
+     <url>  
+         http://dev.apaspai.es/svn/bbs/trunk  
+     </url>  
+  </scm>
+  
+  <build>
+  	<plugins>
+  		<plugin>  
+    		<artifactId>maven-release-plugin</artifactId>  
+    		<configuration>  
+		        <!-- This is a 2.0 beta 6 bug. By default the goals are 'clean verify', so the modules  
+		        are not installed, so the dependencies between modules are not met. With this configuration   
+		        we force the module installation. -->  
+		        <preparationGoals>clean install</preparationGoals>  
+		        <username>${svn.username}</username>  
+		        <password>${svn.password}</password>  
+		        <tagBase>  
+		            http://dev.apaspai.es/svn/bbs/tags  
+		        </tagBase>  
+    		</configuration>  
+		</plugin>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-compiler-plugin</artifactId>
+  			<version>2.5.1</version>
+  			<configuration>
+  				<source>1.6</source>
+  				<target>1.6</target>
+  			</configuration>
+  		</plugin>
+  		<plugin>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                            <goal>test-jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.2</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test-jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+  	</plugins>
+  </build>
+  
+  <dependencies>
+    <dependency>
+    	<groupId>junit</groupId>
+    	<artifactId>junit</artifactId>
+      <version>4.10</version>
+      <scope>test</scope>
+    </dependency>
+<!--     <dependency> -->
+<!--     	<groupId>bouncycastle</groupId>  -->
+<!--     	<artifactId>bcprov-jdk15on</artifactId> -->
+<!--     	<version>1.48</version> -->
+<!--     	<type>jar</type> -->
+<!--     	<scope>compile</scope> -->
+<!--     </dependency> -->
+<dependency>
+  <groupId>fakepath</groupId>
+  <artifactId>sc-light-jdk15on</artifactId>
+  <version>1.47</version>
+</dependency>
+<dependency>
+  <groupId>fakepath</groupId>
+  <artifactId>scprov-jdk15on</artifactId>
+  <version>1.47</version>
+</dependency>
+    <dependency>
+    	<groupId>it.unisa.dia.gas</groupId>
+    	<artifactId>jpbc-api</artifactId>
+    	<version>1.1.0</version>
+    	<scope>compile</scope>
+    </dependency>
+    <dependency>
+    	<groupId>it.unisa.dia.gas</groupId>
+    	<artifactId>jpbc-plaf</artifactId>
+    	<version>1.1.0</version>
+    	<scope>compile</scope>
+    </dependency>
+    <dependency>
+    	<groupId>cat.uib.secom</groupId>
+    	<artifactId>secom-utils-pairing</artifactId>
+    	<version>0.0.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>cat.uib.secom</groupId>
+    	<artifactId>secom-utils-security</artifactId>
+    	<version>0.0.7-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+  
+  
+    <distributionManagement>
+  	<!-- <repository>
+  		<id>testingRepository</id>
+  		<name>Local repository</name>
+  		<url>scp://localhost/home/apaspai/.m2/repository</url>
+  	</repository>
+  	-->
+  	<snapshotRepository>
+    	<id>snapshots</id>
+    	<url>http://dev.apaspai.es:8081/nexus/content/repositories/snapshots</url>
+  	</snapshotRepository>
+  		<repository>
+    	<id>releases</id>
+    	<url>http://dev.apaspai.es:8081/nexus/content/repositories/releases</url>
+  </repository>
+  </distributionManagement>
+  
+  <modules>
+  	<module>bbs-marshalling</module>
+  	<module>bbs-core</module>
+  </modules>
+</project>
